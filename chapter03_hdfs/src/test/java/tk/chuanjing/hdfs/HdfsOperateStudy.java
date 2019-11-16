@@ -151,7 +151,10 @@ public class HdfsOperateStudy {
     @Test
     public void copyHdfsToLocal()throws  Exception{
         //获取分布式文件系统的客户端
-        FileSystem fileSystem = FileSystem.get(new URI("hdfs://node01:8020"), new Configuration());
+        //FileSystem fileSystem = FileSystem.get(new URI("hdfs://node01:8020"), new Configuration());
+
+        //打开权限后，并且这个文件只有root用户有读的权限
+        FileSystem fileSystem = FileSystem.get(new URI("hdfs://node01:8020"), new Configuration(), "root");
 
         //给定hdfs文件的路径
         Path path = new Path("/test/input/install.log");
