@@ -1,0 +1,42 @@
+# author ChuanJing
+# date 2017年9月7日 下午3:55:12
+# version 1.0
+
+# IntelliJ IDEA 工程需要忽略的文件
+.idea
+*.iml
+*.iws
+*.ipr
+out
+gen
+target
+
+/chapter01_zookeeper/.idea
+/chapter01_zookeeper/*.iml
+/chapter01_zookeeper/out
+/chapter01_zookeeper/gen
+/chapter01_zookeeper/target
+
+/chapter03_hdfs/.idea
+/chapter03_hdfs/*.iml
+/chapter03_hdfs/out
+/chapter03_hdfs/gen
+/chapter03_hdfs/target
+
+
+
+# Eclipse 工程需要忽略的文件
+/.project
+/.classpath
+/.settings
+/target
+
+/chapter01_zookeeper/.project
+/chapter01_zookeeper/.classpath
+/chapter01_zookeeper/.settings
+/chapter01_zookeeper/target
+
+/chapter03_hdfs/.project
+/chapter03_hdfs/.classpath
+/chapter03_hdfs/.settings
+/chapter03_hdfs/target
